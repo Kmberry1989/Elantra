@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tire Pressure Monitor Receiver / Transponder: Description and Operation — 2013 Hyundai Elantra L4-1.8L Service Manual | Operation CHARM</title>
+    <meta name='description' content="Detailed repair manual for the 2013 Hyundai Elantra L4-1.8L.">
+    <link rel='stylesheet' href="../style.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  </head>
+  <body>
+    <div class='theme-colors header'>
+      <div class='branding'><b>Operation CHARM</b>: Car repair manuals for everyone.</div>
+<div class=breadcrumbs><a class='breadcrumb-part' href="../">Home</a> <b>&gt;&gt;</b> <a class='breadcrumb-part' href="../Hyundai/">Hyundai</a> <b>&gt;&gt;</b> <a class='breadcrumb-part' href="../Hyundai/2013/">2013</a> <b>&gt;&gt;</b> <a class='breadcrumb-part' href="../index.html">Elantra L4-1.8L</a> <b>&gt;&gt;</b> <a class='breadcrumb-part' href="0.html">Repair and Diagnosis</a> <b>&gt;&gt;</b> <a class='breadcrumb-part' href="0.html#Instrument%20Panel%2C%20Gauges%20and%20Warning%20Indicators/">Instrument Panel, Gauges and Warning Indicators</a> <b>&gt;&gt;</b> <a class='breadcrumb-part' href="0.html#Instrument%20Panel%2C%20Gauges%20and%20Warning%20Indicators/Tire%20Monitoring%20System/">Tire Monitoring System</a> <b>&gt;&gt;</b> <a class='breadcrumb-part' href="953.html">Tire Pressure Monitor Receiver / Transponder</a> <b>&gt;&gt;</b> <a class='breadcrumb-part' href="3353.html">Description and Operation</a></div></div>
+<div class="theme-colors floaty-message lemon-message">
+  <b style="font-size: 1.5em; color: gold">Manuals through 2025 now available!</b>
+  <br><br>
+  Our trusted friends have launched a new website named LEMON, which has newer manuals. It also contains all the CHARM manuals.
+  <br><br>
+  LEMON is the spiritual successor to  CHARM, I recommend you try it!
+  <br><br>
+  Link: <a style='white-space: nowrap' href="../missing-page">lemon-manuals.la</a> or <a style='white-space: nowrap' href="../missing-page">lemon-manuals.org.ua</a>
+  <br><br>
+  (Some people have issue connecting. LEMON is investigating. For now, use Firefox or change your DNS server)
+  <br><br>
+  Or, hide this message: <a href="../missing-page">temporarily</a> or <a href="../missing-page">permanently</a>
+</div>
+<div class='main'>
+<h1>Tire Pressure Monitor Receiver / Transponder: Description and Operation</h1><br><br><br><br><b>Description</b><br><br><div class='oxe-image'><img class='big-img' src="../images/IMP07Q313/asian244/564472862.jpeg"></div><br><br><br><span class='indent-2'>&#09;</span>1.<span class='indent-5'>&#09;</span><span class='indent-5'>&#09;</span><b>Mode</b><br><span class='indent-8'>&#09;</span>(1)<span class='indent-11'>&#09;</span>Virgin State<br><span class='indent-8'>&#09;</span>A.<span class='indent-11'>&#09;</span>The receiver as a sole part is shipped in this state. Replacement parts should therefore arrive in this state.<br><span class='indent-8'>&#09;</span>B.<span class='indent-11'>&#09;</span>In this state, there is no sensor monitoring and no DTC monitoring.<br><span class='indent-8'>&#09;</span>C.<span class='indent-11'>&#09;</span>The state indicates that platform specific parameters must be written to the receiver and that sensors are un-learned.<br><span class='indent-8'>&#09;</span>(2)<span class='indent-11'>&#09;</span>Normal State<br><span class='indent-8'>&#09;</span>A.<span class='indent-11'>&#09;</span>In order for tire inflation state and DTC monitoring to occur, the receiver must be in this state.<br><span class='indent-8'>&#09;</span>B.<span class='indent-11'>&#09;</span>In this state, automatic sensor learning is enabled.<br><span class='indent-8'>&#09;</span>(3)<span class='indent-11'>&#09;</span>Test State<br><span class='indent-8'>&#09;</span>A.<span class='indent-11'>&#09;</span>This state is only used in manufacturing plant to check RF transmission between sensor and receiver.<br><span class='indent-2'>&#09;</span>2.<span class='indent-5'>&#09;</span><span class='indent-5'>&#09;</span><b>Overview</b><br><span class='indent-5'>&#09;</span>A.<span class='indent-8'>&#09;</span>Receives RF data from sensor.<br><span class='indent-5'>&#09;</span>B.<span class='indent-8'>&#09;</span>Uses sensor data to decide whether to turn on TREAD Lamp.<br><span class='indent-5'>&#09;</span>C.<span class='indent-8'>&#09;</span>Learn TPM sensor for under inflation monitoring automatically.<br><span class='indent-5'>&#09;</span>D.<span class='indent-8'>&#09;</span>Uses sensor information, distance travelled, background noise levels, Auto-learn status, short / open circuit output status, vehicle battery level, internal receiver states to determine if there is a system or a vehicle fault.<br><br><b>Operation</b><br><br><span class='indent-2'>&#09;</span>1.<span class='indent-5'>&#09;</span>General Function<br><span class='indent-5'>&#09;</span>A.<span class='indent-8'>&#09;</span>Auto-learn takes place only once per Ignition cycle.<br><span class='indent-5'>&#09;</span>B.<span class='indent-8'>&#09;</span>On successful completion, 4 road wheel sensor ID's are latched into memory for monitoring.<br><span class='indent-5'>&#09;</span>C.<span class='indent-8'>&#09;</span>Until Auto-learn completes, previously learned sensors are monitored for under inflation / leak warnings.<br><span class='indent-2'>&#09;</span>2.<span class='indent-5'>&#09;</span>General Conditions to Learn New Sensors:<br><span class='indent-5'>&#09;</span>A.<span class='indent-8'>&#09;</span>Receiver must determine that it is confident that sensor is not temporary:<br><span class='indent-8'>&#09;</span>1)<span class='indent-11'>&#09;</span>Uses vehicle speed.<br><span class='indent-8'>&#09;</span>2)<span class='indent-11'>&#09;</span>Uses confidence reduction of previously learned sensors.<br><span class='indent-5'>&#09;</span>B.<span class='indent-8'>&#09;</span>Typical time at driving continuously over 12.4 mph(20 kph) to learn a new sensor is up to 20 minutes.<br><span class='indent-2'>&#09;</span>3.<span class='indent-5'>&#09;</span>General Conditions to Un-Learn a sensor that is removed:<br><span class='indent-5'>&#09;</span>A.<span class='indent-8'>&#09;</span>It takes less than 20 minutes at 12.4 - 18.6 mph(20 - 30kph).<br><span class='indent-5'>&#09;</span>B.<span class='indent-8'>&#09;</span>Confidence reduction is dependent on time which vehicle is driven at speed greater than or equal to 12.4 mph(20 kph).<br></div>
+<div class="theme-colors footer">
+  <i>pro multis</i> · <a href="../about.html">About Operation CHARM</a>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>
